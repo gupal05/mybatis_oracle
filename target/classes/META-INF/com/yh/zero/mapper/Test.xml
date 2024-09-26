@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="auth">
+<select id="testSel" resultType="map">
+	SELECT *
+	FROM TE
+</select>
+    
+<insert id="testIns" parameterType="com.yh.zero.dto.UserDto">
+    INSERT INTO TE(TE_ID, TE_PW)
+    VALUES(#{userId}, #{userPw})
+</insert>
+    
+</mapper>
